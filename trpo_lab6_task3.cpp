@@ -70,3 +70,12 @@ public:
     void describe() const override { cout << "Áóęĺň öâĺňîâ ę 8 Ěŕđňŕ\n"; }
 };
 
+
+class AbstractFactory {
+public:
+    virtual PostCard* createPostCard() const = 0;
+    virtual Present* createPresent() const = 0;
+    virtual Cake* createCake() const = 0;
+    virtual ~AbstractFactory() = default;
+};
+
