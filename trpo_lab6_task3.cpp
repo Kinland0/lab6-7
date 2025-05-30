@@ -101,3 +101,22 @@ public:
     Cake* createCake() const override { return new March8FlowerArrangement(); }
 };
 
+
+int main() {
+    setlocale(LC_ALL, "Russian");
+    cout << "Íîâîăîäíčé íŕáîđ:\n";
+    NYFactory nyFactory;
+    createHolidaySet(nyFactory);
+
+    cout << "\nÍŕáîđ íŕ ÄĐ:\n";
+    BDFactory bdFactory;
+    createHolidaySet(bdFactory);
+
+    cout << "\nÍŕáîđ ę 8 Ěŕđňŕ:\n";
+    March8Factory march8Factory;
+    createHolidaySet(march8Factory);
+
+    return 0;
+}
+
+
