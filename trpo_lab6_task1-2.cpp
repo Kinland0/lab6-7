@@ -177,3 +177,10 @@ void test_fold() {
     delete callAbs;
 };
 
+
+int main() {
+    test_copy();
+    test_fold();
+    return 0;
+}
+
